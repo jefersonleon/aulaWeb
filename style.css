@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0077cc;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav .auth-buttons {
+    display: flex;
+}
+
+nav .auth-buttons button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav .auth-buttons .start-now {
+    background-color: #ff7f50;
+    color: white;
+}
+
+nav .auth-buttons .start-now:hover {
+    background-color: #e76b39;
+}
+
+nav .auth-buttons .login {
+    background-color: transparent;
+    color: #333;
+}
+
+nav .auth-buttons .login:hover {
+    color: #0077cc;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero .hero-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 0 0 30px;
+}
+
+.hero .hero-buttons button {
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .hero-buttons .trial {
+    background-color: #ff7f50;
+    color: white;
+}
+
+.hero .hero-buttons .trial:hover {
+    background-color: #e76b39;
+}
+
+.hero .hero-buttons .learn-more {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.hero .hero-buttons .learn-more:hover {
+    background-color: white;
+    color: #333;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+section {
+    margin: 40px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav .auth-buttons {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav .auth-buttons button {
+        margin: 10px 0 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .hero .hero-buttons button {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
